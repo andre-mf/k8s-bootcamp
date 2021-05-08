@@ -70,7 +70,7 @@ jobs:
       - name: Deploy WebApi
         uses: Azure/k8s-deploy@v1.3
         with:
-          images: andremf/api-bootcamp-produto:${{github.run_number}}
+          images: "andremf/api-bootcamp-produto:${{ github.run_number }}"
           manifests: |
             ./api-produto/k8s/mongodb/deployment.yaml
             ./api-produto/k8s/mongodb/service.yaml
