@@ -61,7 +61,7 @@ jobs:
           # Kubernetes Config
           kubeconfig: ${{secrets.K8S_CONFIG}}
           
-      - name: Deploy MongoDB
+      - name: Deploy WebApi
         uses: Azure/k8s-deploy@v1.3
         with:
           manifests: |
