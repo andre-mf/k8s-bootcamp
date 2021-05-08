@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: api
-          image: andremf/api-bootcamp-produto:v2
+          image: andremf/api-bootcamp-produto
           ports:
             - containerPort: 8080
           env:
